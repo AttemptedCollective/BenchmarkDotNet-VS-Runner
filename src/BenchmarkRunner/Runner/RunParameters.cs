@@ -21,7 +21,7 @@ namespace BenchmarkRunner.Runner
                     return "--filter *";
 
                 case NamespaceBenchmarkTreeNode n:
-                    return $"--filter {n.FullName}.*";
+                    return $"--filter {n.FullName}*";
 
                 case CategoryBenchmarkTreeNode c:
                     return $"--anyCategories {c.NodeName}";
